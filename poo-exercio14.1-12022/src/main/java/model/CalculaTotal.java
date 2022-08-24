@@ -13,7 +13,7 @@ public class CalculaTotal {
 	total = total + deposito_mensal;
 	total = total + total * juros;
 	}
-	BigDecimal bd = new BigDecimal(total).setScale(2, RoundingMode.HALF_EVEN);
+	BigDecimal bd = new BigDecimal(total).setScale(4, RoundingMode.HALF_EVEN);
 	return bd.doubleValue();
 	
 	}
